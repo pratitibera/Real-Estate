@@ -24,6 +24,7 @@
       <link rel="stylesheet" href="css/jquery.convform.css">
       <!--Page css -->
       <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/index.css">
    </head>
    <body onload="startApp();" data-spy="scroll" data-target=".navbar" data-offset="50">
       
@@ -58,69 +59,35 @@
          <div class="container">
          <div class="row fullscreen">
             <div class="banner-content col-lg-12">
-               <h1 class="ml11" style="font-size: 34px;">
+               <h1 class="ml11">
                   Hello ,Welcome To Shriram Properties HelpDesk
                </h1>
-               <h3 class="ml3" style="color:orange;font-weight: normal; font-size: 20px; line-height: 1.5em;">At Shriram Properties, we truly value our relationship with customers and their satisfaction is very important to us.</h3>
+               <h3 class="ml3">At Shriram Properties, we truly value our relationship with customers and their satisfaction is very important to us.</h3>
                <br>
-               <div class="row link_wrapper">
-                  <div class="" id="SMERegister">
-                     <a class="link" href="#section1"> CLICK FOR SUPPORT</a>
-                  </div>
-               </div>
+               <a href="#section1"><button class="btn support-button" style="color: white;">CLICK FOR SUPPORT</button></a>
             </div>
          </div>
       </div>
       </section>
       <!-- End banner Area -->
 
-      <!-- Start About Area -->
-      <section class="about-area section-gap" id="section1">
-         <br>
-         <div class="container-fluid">
-            <div class="row">
-               <div class="col-md-2">
-               </div>
-               <div class="col-md-8">
-                  <div class="card" style="box-shadow: -5px -4px 3px 0px rgba(255, 255, 255, 0.425), 5px 4px 3px 0px rgba(88, 88, 88, 0.425); background-color: #f4f4f4;">
-                     <div class="row">
-                        <div class="col-sm-6">
-                           <div class="signup_section">
-                              <form action="" method="">
-                                 <div class="form">
-                                    <div class="inputfield">
-                                       <input type="email" class="input" placeholder="Enter registered email id" required="">
-                                    </div>
-                                    <div class="inputfield">
-                                       <input type="submit" value="VIEW STATUS" class="btn" name="submit">
-                                    </div>
-                                 </div>
-                              </form>
-                           </div>
-                        </div>
-                        <div class="col-sm-6">
-                           <div class="signup_section">
-                              <form action="" method="">
-                                 <div class="form">
-                                    <div class="inputfield">
-                                       <input type="email" class="input" placeholder="Enter registered email id" required="">
-                                    </div>
-                                    <div class="inputfield">
-                                       <input type="submit" value="RAISE TICKET" class="btn" name="submit">
-                                    </div>
-                                 </div>
-                              </form>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-2">
-               </div>
+      <!-- Start support options-->
+      <section id="section1">
+        <div class="container support-section">
+          <div class="form">
+            <div class="title">GET SUPPORT FROM OUR HELPDESK</div>
+            <div class="inputfield">
+               <label>Enter your registered Email id</label>
+               <input type="text" class="input" placeholder="Enter your registered Email id">
+            </div>
+            <div class="inputfield">
+               <input type="submit" value="VIEW STATUS" class="btn">
+               <input type="submit" value="RAISE TICKET" class="btn">
             </div>
          </div>
+        </div>
       </section>
-      <!-- End About Area -->
+      <!-- End support options -->
       <br><br>
       
       
