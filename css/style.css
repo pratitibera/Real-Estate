@@ -229,11 +229,12 @@
 .support-section{
     padding: 120px; 
     padding-top: 60px;
+    padding-bottom: 20px;
 }
 .form{
     width: 100%; 
 }
-.form .title{
+.title{
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 45px;
@@ -281,6 +282,12 @@
     }
 }
 @media (max-width: 420px){
+    .banner-content{
+        height: 225px;
+    }
+    .home-banner-area .fullscreen{
+        height: 325px;
+    }
     .support-section{
     padding: 0px; 
     padding-top: 0px;
@@ -295,3 +302,29 @@
 }
 
 /* support options end */
+
+/* view-status-section */
+.view-status-section{
+    padding: 120px; 
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+.view-status-section td{
+    font-size: 14px;
+    font-family: 'Georgia';
+}
+.view-status-section td span{
+    font-size: 16px;
+    font-family: 'Georgia';
+    color: black;
+    font-weight: bold;
+}
+@media (max-width: 420px){
+    .view-status-section{
+    padding: 0px; 
+    padding-top: 0px;
+}
+.view-status-section .form{
+    padding: 20px; 
+}
+}
