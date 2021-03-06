@@ -27,7 +27,6 @@
       <link rel="stylesheet" href="css/index.css">
    </head>
    <body onload="startApp();" data-spy="scroll" data-target=".navbar" data-offset="50">
-      
       <!-- Start Header Area -->
       <header class="default-header">
          <nav class="navbar navbar-expand-lg navbar-light">
@@ -52,129 +51,206 @@
          </nav>
       </header>
       <!-- End Header Area -->
-      
       <section class="home-banner-area relative" id="home" data-parallax="scroll" data-image-src="images/bg-image.jpg">
          <div class="overlay-bg overlay"></div>
          <h1 class="template-name">AFFABLE</h1>
          <div class="container">
-         <div class="row fullscreen">
-            <div class="banner-content col-lg-12">
-               <h1 class="ml11">
-                  Hello ,Welcome To Shriram Properties HelpDesk
-               </h1>
-               <h3 class="ml3">At Shriram Properties, we truly value our relationship with customers and their satisfaction is very important to us.</h3>
-               <br>
-               <a href="#section1"><button class="btn support-button" style="color: white;">CLICK FOR SUPPORT</button></a>
+            <div class="row fullscreen">
+               <div class="banner-content col-lg-12">
+                  <h1 class="ml11">
+                     Hello ,Welcome To Shriram Properties HelpDesk
+                  </h1>
+                  <h3 class="ml3">At Shriram Properties, we truly value our relationship with customers and their satisfaction is very important to us.</h3>
+                  <br>
+                  <a href="#section1"><button class="btn support-button" style="color: white;">CLICK FOR SUPPORT</button></a>
+               </div>
             </div>
          </div>
-      </div>
       </section>
       <!-- End banner Area -->
-
       <!-- Start support options-->
       <section id="section1">
-        <div class="container support-section">
-          <div class="form">
-            <div class="title">GET SUPPORT FROM OUR HELPDESK</div>
-            <div class="inputfield">
-               <label>Enter your registered Email id</label>
-               <input type="text" class="input" placeholder="Enter your registered Email id" required="">
-            </div>
-            <div class="inputfield">
-               <input type="submit" value="VIEW STATUS" class="btn">
-               <input type="submit" value="RAISE TICKET" class="btn">
+         <div class="container support-section">
+            <div class="form">
+               <div class="title">GET SUPPORT FROM OUR HELPDESK</div>
+               <div class="inputfield">
+                  <label>Enter your registered Email id</label>
+                  <input type="text" class="input" placeholder="Enter your registered Email id" required="">
+               </div>
+               <div class="inputfield">
+                  <input type="button" value="VIEW STATUS" class="btn" onclick="viewStatus();">
+                  <input type="button" value="RAISE TICKET" class="btn" onclick="raiseTicket();">
+               </div>
             </div>
          </div>
-        </div>
       </section>
       <!-- End support options -->
       <section>
-        <div class="container view-status-section">
-          <div class="form">
-            <div class="title">YOUR TICKET DETAILS</div>
-            <div class="table-responsive">
-              <table class="table table-bordered" border="0" cellpadding="0" cellspacing="0">
-                <tbody>
-                  <tr>
-                    <td><span>Company Name</span></td>
-                    <td>Rachana, Bangalore, SouthernCrest, B, 806</td>
-                  </tr>
-                  <tr>
-                    <td><span>Ticket Id</span></td>
-                    <td>7</td>
-                  </tr>
-                  <tr>
-                    <td><span>Issue Type</span></td>
-                    <td>Quotation</td>
-                  </tr>
-                  <tr>
-                    <td><span>Issue Details</span></td>
-                    <td>Need quotation for the unit</td>
-                  </tr>
-                  <tr>
-                    <td><span>Date and Time ticket raised</span></td>
-                    <td>2020-06-26 11:19:22.0</td>
-                  </tr>
-                  <tr>
-                    <td><span>Ticket status</span></td>
-                    <td>Close</td>
-                  </tr>
-                  <tr>
-                    <td><span>Attended By</span></td>
-                    <td>crm1</td>
-                  </tr>
-                  <tr>
-                    <td><span>Action Taken</span></td>
-                    <td>none</td>
-                  </tr>
-                </tbody>
-              </table>
+         <div class="container view-status-section">
+            <div class="form" id="view-status-section">
+               <div class="title">YOUR TICKET DETAILS</div>
+               <div class="accordion">
+                  <div class="contentBx">
+                     <div class="label">TICKET ID 1</div>
+                     <div class="content">
+                        <div class="table-responsive">
+                           <table class="table table-bordered" border="0" cellpadding="0" cellspacing="0">
+                              <tbody>
+                                 <tr>
+                                    <td><span>Company Name</span></td>
+                                    <td>Rachana, Bangalore, SouthernCrest, B, 806</td>
+                                 </tr>
+                                 <tr>
+                                    <td><span>Ticket Id</span></td>
+                                    <td>7</td>
+                                 </tr>
+                                 <tr>
+                                    <td><span>Issue Type</span></td>
+                                    <td>Quotation</td>
+                                 </tr>
+                                 <tr>
+                                    <td><span>Issue Details</span></td>
+                                    <td>Need quotation for the unit</td>
+                                 </tr>
+                                 <tr>
+                                    <td><span>Date and Time ticket raised</span></td>
+                                    <td>2020-06-26 11:19:22.0</td>
+                                 </tr>
+                                 <tr>
+                                    <td><span>Ticket status</span></td>
+                                    <td>Close</td>
+                                 </tr>
+                                 <tr>
+                                    <td><span>Attended By</span></td>
+                                    <td>crm1</td>
+                                 </tr>
+                                 <tr>
+                                    <td><span>Action Taken</span></td>
+                                    <td>none</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="contentBx">
+                     <div class="label">TICKET ID 2</div>
+                     <div class="content">
+                        <div class="table-responsive">
+                           <table class="table table-bordered" border="0" cellpadding="0" cellspacing="0">
+                              <tbody>
+                                 <tr>
+                                    <td><span>Company Name</span></td>
+                                    <td>Rachana, Bangalore, SouthernCrest, B, 806</td>
+                                 </tr>
+                                 <tr>
+                                    <td><span>Ticket Id</span></td>
+                                    <td>7</td>
+                                 </tr>
+                                 <tr>
+                                    <td><span>Issue Type</span></td>
+                                    <td>Quotation</td>
+                                 </tr>
+                                 <tr>
+                                    <td><span>Issue Details</span></td>
+                                    <td>Need quotation for the unit</td>
+                                 </tr>
+                                 <tr>
+                                    <td><span>Date and Time ticket raised</span></td>
+                                    <td>2020-06-26 11:19:22.0</td>
+                                 </tr>
+                                 <tr>
+                                    <td><span>Ticket status</span></td>
+                                    <td>Close</td>
+                                 </tr>
+                                 <tr>
+                                    <td><span>Attended By</span></td>
+                                    <td>crm1</td>
+                                 </tr>
+                                 <tr>
+                                    <td><span>Action Taken</span></td>
+                                    <td>none</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
 
-            <div class="table-responsive">
-              <table class="table table-bordered" border="0" cellpadding="0" cellspacing="0">
-                <tbody>
-                  <tr>
-                    <td><span>Company Name</span></td>
-                    <td>Rachana, Bangalore, SouthernCrest, B, 806</td>
-                  </tr>
-                  <tr>
-                    <td><span>Ticket Id</span></td>
-                    <td>7</td>
-                  </tr>
-                  <tr>
-                    <td><span>Issue Type</span></td>
-                    <td>Quotation</td>
-                  </tr>
-                  <tr>
-                    <td><span>Issue Details</span></td>
-                    <td>Need quotation for the unit</td>
-                  </tr>
-                  <tr>
-                    <td><span>Date and Time ticket raised</span></td>
-                    <td>2020-06-26 11:19:22.0</td>
-                  </tr>
-                  <tr>
-                    <td><span>Ticket status</span></td>
-                    <td>Close</td>
-                  </tr>
-                  <tr>
-                    <td><span>Attended By</span></td>
-                    <td>crm1</td>
-                  </tr>
-                  <tr>
-                    <td><span>Action Taken</span></td>
-                    <td>none</td>
-                  </tr>
-                </tbody>
-              </table>
+            <div class="form" id="raise-ticket-section">
+               <div class="title">Your Property Details : Select One to proceed</div>
+               <div class="inputfield terms">
+                  <label class="check">
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                  </label>
+                  <div class="termstate">
+                     <div class="card">
+                        <p>Rachana</p>
+                        <p>radhavkrishna1994@gmail.com</p>
+                        <p>9555646788</p>
+                        <p>Bangalore</p>
+                        <p>806, B</p>
+                        <p>SouthernCrest</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="inputfield terms">
+                  <label class="check">
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                  </label>
+                  <div class="termstate">
+                     <div class="card">
+                        <p>Rachana</p>
+                        <p>radhavkrishna1994@gmail.com</p>
+                        <p>9555646788</p>
+                        <p>Bangalore</p>
+                        <p>806, B</p>
+                        <p>SouthernCrest</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="inputfield terms">
+                  <label class="check">
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                  </label>
+                  <div class="termstate">
+                     <div class="card">
+                        <p>Rachana</p>
+                        <p>radhavkrishna1994@gmail.com</p>
+                        <p>9555646788</p>
+                        <p>Bangalore</p>
+                        <p>806, B</p>
+                        <p>SouthernCrest</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="inputfield terms">
+                  <label class="check">
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                  </label>
+                  <div class="termstate">
+                     <div class="card">
+                        <p>Rachana</p>
+                        <p>radhavkrishna1994@gmail.com</p>
+                        <p>9555646788</p>
+                        <p>Bangalore</p>
+                        <p>806, B</p>
+                        <p>SouthernCrest</p>
+                     </div>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div>
+
+
+         </div>
+        
       </section>
-      
-      
-      
       <!--- Scripts section --->
       <!-- sticky nav -->
       <script src="js/jquery-2.2.4.min.js"></script>
@@ -190,62 +266,74 @@
       <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/easytimer@1.1.1/src/easytimer.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-      
-     
       <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-               <script>
-                  var textWrapper = document.querySelector('.ml3');
-                  textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-                  
-                  anime.timeline({loop: true})
-                  .add({
-                  targets: '.ml3 .letter',
-                  opacity: [0,1],
-                  easing: "easeInOutQuad",
-                  duration: 2250,
-                  delay: (el, i) => 150 * (i+1)
-                  }).add({
-                  targets: '.ml3',
-                  opacity: 0,
-                  duration: 1000,
-                  easing: "easeOutExpo",
-                  delay: 1000
-                  });
-               </script>
-               <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-               <script>
-                  var textWrapper = document.querySelector('.ml11 .letters');
-                  textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
-                  
-                  anime.timeline({loop: true})
-                    .add({
-                      targets: '.ml11 .line',
-                      scaleY: [0,1],
-                      opacity: [0.5,1],
-                      easing: "easeOutExpo",
-                      duration: 700
-                    })
-                    .add({
-                      targets: '.ml11 .line',
-                      translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 10],
-                      easing: "easeOutExpo",
-                      duration: 700,
-                      delay: 100
-                    }).add({
-                      targets: '.ml11 .letter',
-                      opacity: [0,1],
-                      easing: "easeOutExpo",
-                      duration: 600,
-                      offset: '-=775',
-                      delay: (el, i) => 34 * (i+1)
-                    }).add({
-                      targets: '.ml11',
-                      opacity: 0,
-                      duration: 1000,
-                      easing: "easeOutExpo",
-                      delay: 1000
-                    });
-                  
-               </script>
+      <!-- For accordion in FAQ section --->
+      <script>
+         const accordion = document.getElementsByClassName('contentBx');
+         
+         for(i=0; i< accordion.length; i++ ){
+         
+           accordion[i].addEventListener('click', function(){
+         
+             this.classList.toggle('active')
+         
+           })
+         
+         }
+      </script>
+      <script>
+         var textWrapper = document.querySelector('.ml3');
+         textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+         
+         anime.timeline({loop: true})
+         .add({
+         targets: '.ml3 .letter',
+         opacity: [0,1],
+         easing: "easeInOutQuad",
+         duration: 2250,
+         delay: (el, i) => 150 * (i+1)
+         }).add({
+         targets: '.ml3',
+         opacity: 0,
+         duration: 1000,
+         easing: "easeOutExpo",
+         delay: 1000
+         });
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+      <script>
+         var textWrapper = document.querySelector('.ml11 .letters');
+         textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
+         
+         anime.timeline({loop: true})
+           .add({
+             targets: '.ml11 .line',
+             scaleY: [0,1],
+             opacity: [0.5,1],
+             easing: "easeOutExpo",
+             duration: 700
+           })
+           .add({
+             targets: '.ml11 .line',
+             translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 10],
+             easing: "easeOutExpo",
+             duration: 700,
+             delay: 100
+           }).add({
+             targets: '.ml11 .letter',
+             opacity: [0,1],
+             easing: "easeOutExpo",
+             duration: 600,
+             offset: '-=775',
+             delay: (el, i) => 34 * (i+1)
+           }).add({
+             targets: '.ml11',
+             opacity: 0,
+             duration: 1000,
+             easing: "easeOutExpo",
+             delay: 1000
+           });
+         
+      </script>
    </body>
 </html>

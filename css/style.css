@@ -298,10 +298,88 @@
 .form .inputfield label{
    display: none;
 }
+.form .inputfield.terms{
+    flex-direction: row;
+  }
 
 }
 
 /* support options end */
+
+/*Accordion styling*/
+
+.accordion {
+    /* max-width: 800px; */
+    align-self: center;
+}
+
+.accordion .contentBx {
+    position: relative;
+    margin: 20px 28px;
+    box-shadow: -5px -4px 3px 0px rgba(255, 255, 255, 0.425), 5px 4px 3px 0px rgba(88, 88, 88, 0.425);
+    /* border: 1px solid black; */
+}
+
+.accordion .contentBx .label {
+    position: relative;
+    padding: 10px;
+    background-color: #f4f4f4;
+    color: #38489E;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.accordion .contentBx .label::before {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+
+.accordion .contentBx.active .label::before {
+    content: '-';
+}
+
+.accordion .contentBx .content {
+    position: relative;
+    background-color: #f4f4f4;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: hidden;
+    margin-left: 0px;
+    color: #38489E;
+}
+
+.accordion .contentBx.active .content {
+    height: fit-content;
+    padding: 10px;
+    /* border-bottom: 1px solid black; */
+}
+
+@media only screen and (max-width: 991px) {
+    /* .faqs{
+    padding: 10px;
+} */
+    .accordion .contentBx .label {
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+
+@media only screen and (max-width: 765px) {
+    /* .faqs{
+    padding: 0px;
+} */
+    .accordion .contentBx .label {
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
 
 /* view-status-section */
 .view-status-section{
@@ -327,4 +405,64 @@
 .view-status-section .form{
     padding: 20px; 
 }
+}
+
+/* Raise ticket section */
+.form .inputfield .termstate{
+   font-size: 14px;
+   color: #757575;
+   width: 100%;
+}
+.form .inputfield .termstate .card{
+  padding: 15px; width: 100%; 
+  background-color: #f4f4f4; 
+  box-shadow: -5px -4px 3px 0px rgba(255, 255, 255, 0.425), 5px 4px 3px 0px rgba(88, 88, 88, 0.425); 
+  border: none;
+}
+.form .inputfield .termstate .card p{
+  line-height: .3em;
+}
+.form .inputfield .check{
+  width: 15px;
+  height: 15px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+.form .inputfield .check input[type="checkbox"]{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.form .inputfield .check .checkmark{
+  width: 15px;
+  height: 15px;
+  border: 1px solid #38489E;
+  display: block;
+  position: relative;
+}
+.form .inputfield .check .checkmark:before{
+  content: "";
+  position: absolute;
+  top: 4px;
+    left: 2px;
+    width: 8px;
+    height: 2px;
+  border: 2px solid;
+  border-color: transparent transparent #fff #fff;
+  transform: rotate(-45deg);
+  display: none;
+}
+.form .inputfield .check input[type="checkbox"]:checked ~ .checkmark{
+  background: #38489E;
+}
+
+.form .inputfield .check input[type="checkbox"]:checked ~ .checkmark:before{
+  display: block;
+}
+
+#raise-ticket-section,
+#view-status-section{
+  display: none;
 }
