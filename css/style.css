@@ -219,6 +219,7 @@
         line-height: 1.5em;
     }
     .support-button {
+      margin-top: -70px;
         font-size: 10px;
     }
 }
