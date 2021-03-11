@@ -19,22 +19,27 @@ function issueDetails(){
 function sidebar(){
 	$(".humberger__menu__wrapper").addClass("show__humberger__menu__wrapper");
          $(".humberger__menu__overlay").addClass("active");
-         $("body").addClass("over_hid");
+         // $("body").addClass("over_hid");
 }
 
+function ticketDetails(){
+            document.getElementById('admin-ticketDetails').style.display = "block";
+         }
+
 (function ($) {
-         //Humberger Menu
-         $(".humberger__open").on("click", function () {
-         $(".humberger__menu__wrapper").addClass("show__humberger__menu__wrapper");
-         $(".humberger__menu__overlay").addClass("active");
-         $("body").addClass("over_hid");
-         });
-         
-         $(".humberger__menu__overlay").on("click", function () {
-         $(".humberger__menu__wrapper").removeClass(
-         "show__humberger__menu__wrapper"
-         );
-         $(".humberger__menu__overlay").removeClass("active");
-         $("body").removeClass("over_hid");
-         });
-         })(jQuery);
+
+  //Humberger Menu
+  $(".humberger__open").on("click", function () {
+    $(".humberger__menu__wrapper").addClass("show__humberger__menu__wrapper");
+    $(".humberger__menu__overlay").addClass("active");
+    $("body").addClass("over_hid");
+  });
+
+  $(".humberger__menu__overlay").on("click", function () {
+    $(".humberger__menu__wrapper").removeClass(
+      "show__humberger__menu__wrapper"
+    );
+    $(".humberger__menu__overlay").removeClass("active");
+    $("body").removeClass("over_hid");
+  });
+})(jQuery);

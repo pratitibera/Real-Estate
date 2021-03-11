@@ -13,6 +13,7 @@
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
       <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
       <link rel="stylesheet" href="css/dashboard.css" type="text/css">
+      <link rel="stylesheet" href="css/style.css" type="text/css">
    </head>
    <body onload="sidebar();">
       <!-- Humberger Begin -->
@@ -20,40 +21,150 @@
       <div class="humberger__menu__wrapper p-0">
          <!-- Mobile Navigation Lists -->
          <div class="humberger__nav__links">
+            <h4>Welcome Ajay!</h4>
             <ul>
-               <li><a href="#">Home</a></li>
-               <li><a href="#">Category</a></li>
-               <li><a href="#">Today Deals</a></li>
-               <hr>
+               <li><a href="#"><i class="fas fa-ticket-alt"></i>View Tickets</a></li>
+               <li><a href="#"><i class="fas fa-key"></i>Update Password</a></li>
+               <li><a href="#"><i class="fas fa-user"></i>Sign out</a></li>
             </ul>
          </div>
       </div>
       <!-- Humberger End -->
       <!-- Header Section Begin -->
-      <header class="header">
+      <header class="header sticky-top">
          <div class="container-fluid">
             <div class="row top">
                <!-- Brand Name and Logo -->
                <div class="col-10 col-sm-3">
                   <div class="header__logo">
                      <a href="./index.html">
-                     <span class="pl-lg-3 brand-name"><b>PUTATOE</b></span>
+                     <span class="pl-lg-3 brand-name"><b>AFFABLE</b></span>
                      </a>
                   </div>
                </div>
-               <!-- Search Field and Categories -->
-               <div class="col-1 col-lg-8 header__search__field"></div>
-               <!-- Social Links, User, Cart Option -->
-               <div class="col-1 col-lg-1 pt-lg-1 header__social__user__account">
-                  <!-- Social Links -->
-                  <div class="header__social__icons float-right pr-4">
-                     <div class="humberger__open"><i class="fa fa-bars"></i></div>
-                  </div>
-               </div>
+               <div class="col-lg-9 header__search__field"></div>
+            </div>
+            <div class="humberger__open">
+               <i class="fa fa-bars"></i>
             </div>
          </div>
       </header>
       <!-- Header Section End -->
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-sm-2 admin-sidebar">
+               <div class="sticky_sidebar">
+                  <div class="humberger__nav__links">
+                     <h4>Welcome Ajay!</h4>
+                     <ul>
+                        <li><a href="#section1"><i class="fas fa-ticket-alt"></i>View Tickets</a></li>
+                        <li><a href="#section2"><i class="fas fa-key"></i>Update Password</a></li>
+                        <li><a href="#section3"><i class="fas fa-user"></i>Sign out</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-10" style="padding: 20px; padding-left: 65px;">
+               <section id="section1">
+                  <h4><b>VIEW TICKETS</b></h4>
+                  <br>
+                  <div class="table-responsive">
+                     <table class="table table-bordered" border="0" cellpadding="0" cellspacing="0">
+                        <tbody>
+                           <tr>
+                              <th>Ticket Id</th>
+                              <th>Customer Email</th>
+                              <th>Date</th>
+                              <th>Issue</th>
+                              <th>Details</th>
+                              <th>Status</th>
+                              <th>Action</th>
+                           </tr>
+                           <tr>
+                              <td onclick="ticketDetails();">11</td>
+                              <td>radhavkrishna1994@gmail.com</td>
+                              <td>2021-03-04 16:27:02.0</td>
+                              <td>invoice related</td>
+                              <td>My invoice has some errors in my name.</td>
+                              <td>Open</td>
+                              <td>none</td>
+                           </tr>
+                           <tr>
+                              <td onclick="ticketDetails();">11</td>
+                              <td>radhavkrishna1994@gmail.com</td>
+                              <td>2021-03-04 16:27:02.0</td>
+                              <td>invoice related</td>
+                              <td>My invoice has some errors in my name.</td>
+                              <td>Open</td>
+                              <td>none</td>
+                           </tr>
+                           <tr>
+                              <td onclick="ticketDetails();">11</td>
+                              <td>radhavkrishna1994@gmail.com</td>
+                              <td>2021-03-04 16:27:02.0</td>
+                              <td>invoice related</td>
+                              <td>My invoice has some errors in my name.</td>
+                              <td>Open</td>
+                              <td>none</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <br>
+                  <div class="table-responsive" id="admin-ticketDetails">
+                     <table class="table table-bordered" border="0" cellpadding="0" cellspacing="0">
+                        <tbody>
+                           <tr>
+                              <th>Ticket Id</th>
+                              <td>11</td>
+                           </tr>
+                           <tr>
+                              <th>Customer Email</th>
+                              <td>radhavkrishna1994@gmail.com</td>
+                           </tr>
+                           <tr>
+                              <th>Customer/Property details</th>
+                              <td>Rachana,Bangalore,SouthernCrest,B,806</td>
+                           </tr>
+                           <tr>
+                              <th>Ticket Date</th>
+                              <td>2021-03-04 16:27:02.0</td>
+                           </tr>
+                           <tr>
+                              <th>Issue Details</th>
+                              <td>My invoice has some errors in my name.</td>
+                           </tr>
+                           <tr>
+                              <th>Ticket status</th>
+                              <td>Open</td>
+                           </tr>
+                           <tr>
+                              <th>Enter Comments</th>
+                              <td><textarea type="text" class="textarea"></textarea>
+                           </tr>
+                           <tr>
+                              <th>Change Status</th>
+                              <td>
+                                 <div class="custom_select">
+                                    <select>
+                                       <option value="">Select</option>
+                                       <option value="Quotation">Quotation</option>
+                                       <option value="Invoicerelated">Invoice related</option>
+                                    </select>
+                                 </div>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </section>
+               <section id="section2">
+                  <h4><b>UPDATE PASSWORD</b></h4>
+                  <br>
+               </section>
+            </div>
+         </div>
+      </div>
       <!-- Js Plugins -->
       <script src="js/jquery-2.2.4.min.js"></script>
       <script src="js/pageHandler.js"></script>
