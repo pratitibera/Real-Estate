@@ -269,6 +269,16 @@ th {
   background: #1B4F72;
   cursor: pointer;
 }
+@media (max-width: 400px) {
+  td {
+  font-size: 10px;
+}
+
+th {
+  font-size: 12px;
+  font-weight: 400;
+}
+}
 
 .sticky_sidebar {
   position: sticky;
