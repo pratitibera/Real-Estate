@@ -1,4 +1,4 @@
-body{
+body {
   background-color: #f5f5f5;
 }
 
@@ -63,7 +63,8 @@ body{
 .humberger__nav__links hr {
   border: 0.3px solid #1B4F72;
 }
-.humberger__nav__links ul{
+
+.humberger__nav__links ul {
   padding-left: 0px;
   padding-top: 25px;
 }
@@ -72,33 +73,35 @@ body{
   color: #1B4F72;
   text-decoration: none;
 }
-.humberger__nav__links ul li{
+
+.humberger__nav__links ul li {
   list-style: none;
 }
-.humberger__nav__links ul li a i{
+
+.humberger__nav__links ul li a i {
   margin-right: 10px;
 }
 
 @media screen and (max-width: 992px) {
+  .admin-sidebar {
+    display: none;
+  }
   .header__search__field {
     display: none;
   }
   .header_buttons {
     display: none;
   }
-
   .header__social__user__account {
     display: none;
   }
   .mybasket_button {
     display: none;
   }
-
-  .brand-name + img {
+  .brand-name+img {
     height: 50px;
     width: 50px;
   }
-
   .quick__links__div {
     display: none;
   }
@@ -123,7 +126,7 @@ body{
     position: relative;
   }
   .humberger__menu__wrapper {
-    width: 300px;
+    width: 200px;
     background: #ffffff;
     position: fixed;
     left: -300px;
@@ -174,6 +177,7 @@ body{
     overflow: hidden;
   }
 }
+
 
 /* Wide Mobile = 480px */
 
@@ -196,7 +200,7 @@ body{
     position: relative;
   }
   .humberger__menu__wrapper {
-    width: 300px;
+    width: 200px;
     background: #ffffff;
     position: fixed;
     left: -300px;
@@ -218,7 +222,6 @@ body{
     opacity: 1;
     left: 0;
   }
-
   .humberger__menu__overlay {
     position: fixed;
     left: 0;
@@ -244,17 +247,20 @@ body{
   .header__menu {
     display: none;
   }
-
   .over_hid {
     overflow: hidden;
   }
 }
+
+
+/* Tables */
 
 td {
   font-size: 14px;
   font-family: 'Georgia';
   cursor: pointer;
 }
+
 th {
   font-size: 16px;
   font-family: 'Georgia';
@@ -263,19 +269,108 @@ th {
   background: #1B4F72;
   cursor: pointer;
 }
-#admin-ticketDetails{
+
+.sticky_sidebar {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 6rem;
+}
+.main-body-section {
+    padding: 30px; 
+}
+@media (min-width: 993px) {
+  .admin-sidebar {
+    display: block!important;
+    min-height: 90vh;
+    box-shadow: 5px 0px 20px rgb(0 0 0 / 30%);
+  }
+  .main-body-section {
+    padding: 20px; 
+    padding-left: 65px;
+  }
+}
+
+#admin-ticketDetails {
   display: none;
 }
 
-@media (min-width: 993px){
-  .admin-sidebar{
-  display: block!important; 
-  min-height: 90vh;
-  box-shadow: 5px 0px 20px rgb(0 0 0 / 30%);
+#section2 {
+  display: none;
 }
+
+
+/*Update password section*/
+
+.update_password_section {
+  max-width: 590px;
+  width: 100%;
+  margin: 20px auto;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
+  padding: 30px;
 }
-.sticky_sidebar{
-  position: sticky; 
-  position: -webkit-sticky; 
-  top: 6rem;
+
+.update_password_section .title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #1B4F72;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.update_password_section .form {
+  width: 100%;
+}
+
+.update_password_section .form .inputfield {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.update_password_section .form .inputfield label {
+  width: 250px;
+  color: #757575;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.update_password_section .form .inputfield .input {
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.update_password_section .form .inputfield .input:focus {
+  border: 1px solid #1B4F72;
+}
+
+.update_password_section .form .inputfield .btn {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 0px;
+  background: #1B4F72;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}
+
+.update_password_section .form .inputfield .btn:hover {
+  background: #1B4F72;
+}
+
+@media (max-width:420px) {
+  .update_password_section .form .inputfield {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .update_password_section .form .inputfield label {
+    margin-bottom: 5px;
+  }
 }

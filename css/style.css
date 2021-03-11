@@ -237,11 +237,11 @@
   padding-bottom: 20px;
 }
 
-.form {
+.support-section .form {
   width: 100%;
 }
 
-.title {
+.support-section .title {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 45px;
@@ -250,21 +250,21 @@
   text-align: center;
 }
 
-.form .inputfield {
+.support-section .form .inputfield {
   margin-bottom: 45px;
   display: flex;
   align-items: center;
 }
 
-.form .inputfield label {
+.support-section .form .inputfield label {
   width: 250px;
   color: #757575;
   margin-right: 10px;
   font-size: 14px;
 }
 
-.form .inputfield .input,
-.form .inputfield .textarea,
+.support-section .form .inputfield .input,
+.support-section .form .inputfield .textarea,
 #admin-ticketDetails .textarea{
   width: 100%;
   outline: none;
@@ -275,14 +275,14 @@
   transition: all 0.3s ease;
 }
 
-.form .inputfield .textarea,
+.support-section .form .inputfield .textarea,
 #admin-ticketDetails .textarea {
   width: 100%;
   height: 125px;
   resize: none;
 }
 
-.form .inputfield .btn {
+.support-section .form .inputfield .btn {
   width: 100%;
   padding: 8px 10px;
   font-size: 15px;
@@ -296,7 +296,7 @@
 }
 
 @media (min-width: 421px) {
-  .form {
+  .support-section .form {
     border: 1px solid #38489E;
     border-radius: 20px;
     padding: 60px;
@@ -314,13 +314,13 @@
     padding: 0px;
     padding-top: 0px;
   }
-  .form {
+  .support-section .form {
     padding: 40px;
   }
-  .form .inputfield label {
+  .support-section .form .inputfield label {
     display: none;
   }
-  .form .inputfield.terms {
+  .support-section .form .inputfield.terms {
     flex-direction: row;
   }
 }
