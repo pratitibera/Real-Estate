@@ -241,7 +241,9 @@
   width: 100%;
 }
 
-.support-section .title {
+.support-section .title,
+.view-status-section .title,
+#raise-ticket-section .title {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 45px;
@@ -436,49 +438,136 @@
 
 
 /* Raise ticket section */
+#raise-ticket-section,
+#view-status-section,
+#raise-issue-section,
+#issueDetails,
+#issueDetailsImage {
+  display: none;
+}
 
-.form .inputfield .termstate {
+#raise-ticket-section,
+#raise-issue-section{
+  max-width: 900px;
+  width: 100%;
+  margin: 20px auto;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+  padding: 30px;
+}
+
+
+#raise-ticket-section .form,
+#raise-issue-section .form{
+  width: 100%;
+}
+
+#raise-ticket-section .form .inputfield,
+#raise-issue-section .form .inputfield{
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+#raise-ticket-section .form .inputfield label,
+#raise-issue-section .form .inputfield label{
+   width: 200px;
+   color: #757575;
+   margin-right: 10px;
   font-size: 14px;
-  color: #757575;
+}
+
+#raise-ticket-section .form .inputfield .input,
+#raise-issue-section .form .inputfield .input,
+#raise-issue-section .form .inputfield .textarea{
   width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
 }
 
-.form .inputfield .termstate .card {
-  padding: 15px;
+#raise-issue-section .form .inputfield .textarea{
   width: 100%;
-  background-color: #f4f4f4;
-  box-shadow: -5px -4px 3px 0px rgba(255, 255, 255, 0.425), 5px 4px 3px 0px rgba(88, 88, 88, 0.425);
-  border: none;
+  height: 125px;
+  resize: none;
 }
 
-.form .inputfield .termstate .card p {
-  line-height: .3em;
+#raise-issue-section .form .inputfield .custom_select,
+#admin-ticketDetails .custom_select{
+  position: relative;
+  width: 100%;
+  height: 37px;
 }
 
-.form .inputfield .check {
+#raise-issue-section .form .inputfield .custom_select:before,
+#admin-ticketDetails .custom_select:before{
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  border: 8px solid;
+  border-color: #d5dbd9 transparent transparent transparent;
+  pointer-events: none;
+}
+
+#raise-issue-section .form .inputfield .custom_select select,
+#admin-ticketDetails .custom_select select{
+  -webkit-appearance: none;
+  -moz-appearance:   none;
+  appearance:        none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 1px solid #d5dbd9;
+  border-radius: 3px;
+}
+
+
+
+#raise-ticket-section .form .inputfield .input:focus,
+#raise-issue-section .form .inputfield .input:focus,
+#raise-issue-section .form .inputfield .custom_select select:focus,
+#admin-ticketDetails .custom_select select:focus{
+  border: 1px solid #38489E;
+}
+
+#raise-ticket-section .form .inputfield p,
+#raise-issue-section .form .inputfield p{
+   font-size: 14px;
+   color: #757575;
+   line-height: 1.3em;
+}
+#raise-ticket-section .form .inputfield .check,
+#raise-issue-section .form .inputfield .check{
   width: 15px;
   height: 15px;
   position: relative;
   display: block;
   cursor: pointer;
+  margin-right: 8px;
 }
-
-.form .inputfield .check input[type="checkbox"] {
+#raise-ticket-section .form .inputfield .check input[type="checkbox"],
+#raise-issue-section .form .inputfield .check input[type="checkbox"]{
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
 }
-
-.form .inputfield .check .checkmark {
+#raise-ticket-section .form .inputfield .check .checkmark,
+#raise-issue-section .form .inputfield .check .checkmark{
   width: 15px;
   height: 15px;
   border: 1px solid #38489E;
   display: block;
   position: relative;
 }
-
-.form .inputfield .check .checkmark:before {
+#raise-ticket-section .form .inputfield .check .checkmark:before,
+#raise-issue-section .form .inputfield .check .checkmark:before{
   content: "";
   position: absolute;
   top: 4px;
@@ -490,59 +579,46 @@
   transform: rotate(-45deg);
   display: none;
 }
-
-.form .inputfield .check input[type="checkbox"]:checked~.checkmark {
+#raise-ticket-section .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark,
+#raise-issue-section .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark{
   background: #38489E;
 }
 
-.form .inputfield .check input[type="checkbox"]:checked~.checkmark:before {
+#raise-ticket-section .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark:before,
+#raise-issue-section .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark:before{
   display: block;
 }
 
-#raise-ticket-section,
-#view-status-section,
-#raise-issue-section,
-#issueDetails,
-#issueDetailsImage {
-  display: none;
-}
-
-.form .inputfield .custom_select,
-#admin-ticketDetails .custom_select{
-  position: relative;
+#raise-ticket-section .form .inputfield .btn,
+#raise-issue-section .form .inputfield .btn{
   width: 100%;
-  height: 37px;
-}
-
-.form .inputfield .custom_select:before,
-#admin-ticketDetails .custom_select:before{
-  content: "";
-  position: absolute;
-  top: 12px;
-  right: 10px;
-  border: 8px solid;
-  border-color: #38489E transparent transparent transparent;
-  pointer-events: none;
-}
-
-.form .inputfield .custom_select select,
-#admin-ticketDetails .custom_select select{
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  outline: none;
-  width: 100%;
-  height: 100%;
+   padding: 8px 10px;
+  font-size: 15px; 
   border: 0px;
-  padding: 8px 10px;
-  font-size: 15px;
-  border: 1px solid #38489E;
+  background:  #38489E;
+  color: #fff;
+  cursor: pointer;
   border-radius: 3px;
+  outline: none;
 }
 
-.form .inputfield .custom_select select:focus,
-.form .inputfield .textarea:focus,
-#admin-ticketDetails .custom_select select:focus
-{
-  border: 1px solid #38489E;
+#raise-ticket-section .form .inputfield .btn:hover,
+#raise-issue-section .form .inputfield .btn:hover{
+  background: #38489E;
+}
+
+@media (max-width:420px) {
+  #raise-ticket-section .form .inputfield,
+  #raise-issue-section .form .inputfield{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #raise-ticket-section .form .inputfield label,
+  #raise-issue-section .form .inputfield label{
+    margin-bottom: 5px;
+  }
+  #raise-ticket-section .form .inputfield.terms,
+  #raise-issue-section .form .inputfield.terms{
+    flex-direction: row;
+  }
 }

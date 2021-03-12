@@ -3,7 +3,7 @@ body {
 }
 
 .header {
-  background: #1B4F72;
+  background: #38489E;
 }
 
 .header__logo {
@@ -61,7 +61,7 @@ body {
 }
 
 .humberger__nav__links hr {
-  border: 0.3px solid #1B4F72;
+  border: 0.3px solid #38489E;
 }
 
 .humberger__nav__links ul {
@@ -70,7 +70,7 @@ body {
 }
 
 .humberger__nav__links a {
-  color: #1B4F72;
+  color: #38489E;
   text-decoration: none;
 }
 
@@ -266,7 +266,7 @@ th {
   font-family: 'Georgia';
   color: #fff;
   font-weight: bold;
-  background: #1B4F72;
+  background: #38489E;
   cursor: pointer;
 }
 @media (max-width: 400px) {
@@ -323,7 +323,7 @@ th {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 25px;
-  color: #1B4F72;
+  color: #38489E;
   text-transform: uppercase;
   text-align: center;
 }
@@ -356,7 +356,7 @@ th {
 }
 
 .update_password_section .form .inputfield .input:focus {
-  border: 1px solid #1B4F72;
+  border: 1px solid #38489E;
 }
 
 .update_password_section .form .inputfield .btn {
@@ -364,7 +364,7 @@ th {
   padding: 8px 10px;
   font-size: 15px;
   border: 0px;
-  background: #1B4F72;
+  background: #38489E;
   color: #fff;
   cursor: pointer;
   border-radius: 3px;
@@ -372,7 +372,7 @@ th {
 }
 
 .update_password_section .form .inputfield .btn:hover {
-  background: #1B4F72;
+  background: #38489E;
 }
 
 @media (max-width:420px) {
