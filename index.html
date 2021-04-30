@@ -252,13 +252,14 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
       <!-- For accordion in FAQ section --->
       <script>
-         const accordion = document.getElementsByClassName('contentBx');
+         var accordion = document.getElementsByClassName('contentBx');
          
          for(i=0; i< accordion.length; i++ ){
          
            accordion[i].addEventListener('click', function(){
          
              this.classList.toggle('active')
+             alert(i);
          
            })
          
